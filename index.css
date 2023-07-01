@@ -1,0 +1,25 @@
+.row{
+    display: flex;
+    justify-content: space-around;
+}
+#movies{
+    width: 40%;
+}
+#movie-details{
+    width: 40%;
+}
+.movie-card-detail{
+    margin: 50px 0;
+}
+
+.poster{
+    width: 100%;
+}
+.desc{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.description{
+    font-weight: bold;
+}
