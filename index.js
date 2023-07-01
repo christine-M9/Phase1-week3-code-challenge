@@ -4,7 +4,8 @@
   });
 
     const url="http://localhost:3000/films"
-
+    const urlfirst="http://localhost:3000/films"
+    
 //   function displays movie on chrome by retrieving the element with the Id movies and assigns it to moviy variable.
     function displayMovies(movie){
     const moviy=document.getElementById("movies")
@@ -55,7 +56,7 @@ function DisplayEachMovie(emovie){
     availabletickets.textContent=`Available Tickets: ${emovie.capacity-emovie.tickets_sold}`
     runtime.innerHTML=`Runtime: ${runtime.textContent=emovie.runtime}`
     description.innerHTML=`<span class="description">Description:</span> ${description.textContent=emovie.description}`;
-
+    poster.setAttribute("src", emovie.poster);
    
 }
 // fetching data by loop iteration
