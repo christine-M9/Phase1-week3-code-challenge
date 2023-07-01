@@ -27,19 +27,34 @@
     </ul>
  ` 
 //   console.log(movie.poster)
-      
+container.querySelector(".movieCard").addEventListener("click", () => {
+    displayMovieById(movie.id);
+});
 // appending the container
    moviy.appendChild(container);
 
+   function displayMovieById(id)
+   {
+   fetch(`${url}/${id}`)
+   .then((res) =>res.json())
+   .then((emovieData) => {
+       DisplayEachMovie(emovieData);
+   })
 }
+    }
 // declaring and and assigning to specific elements. 
-function DisplayEachMovie(eachmovie){
+function DisplayEachMovie(emovie){
 
     const title=document.querySelector(".title")
     const runtime=document.querySelector(".runtime")
     let availabletickets=document.querySelector(".availabletickets")
     const description=document.querySelector(".description")
     const poster=document.querySelector(".poster")
+
+    title.innerHTML=`${title.textContent=emovie.title}`;
+    availabletickets.textContent=`Available Tickets: ${emovie.capacity-emovie.tickets_sold}`
+    runtime.innerHTML=`Runtime: ${runtime.textContent=emovie.runtime}`
+    description.innerHTML=`<span class="description">Description:</span> ${description.textContent=emovie.description}`;
 
    
 }
