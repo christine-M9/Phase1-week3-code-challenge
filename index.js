@@ -27,13 +27,22 @@
     </ul>
  ` 
 //   console.log(movie.poster)
-
-
+      
 // appending the container
    moviy.appendChild(container);
 
 }
+// declaring and and assigning to specific elements. 
+function DisplayEachMovie(eachmovie){
 
+    const title=document.querySelector(".title")
+    const runtime=document.querySelector(".runtime")
+    let availabletickets=document.querySelector(".availabletickets")
+    const description=document.querySelector(".description")
+    const poster=document.querySelector(".poster")
+
+   
+}
 // fetching data by loop iteration
     function fetchMovies(){
     fetch(url)
