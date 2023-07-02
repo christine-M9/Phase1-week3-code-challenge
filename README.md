@@ -1,15 +1,15 @@
 # Phase1-week3-code-challenge
-## title
+  ## title
 A MOVIE WEB APPLICATION.
 
-## description
+  ## description
 This web application demonstrates how to fetch movie data from a server, generating movie cards, and displaying detailed movie information on the web.It contains the Javascript application for displaying movies.
 You click on a movie card to view more details about the movie.
 For you to run the application locally, ensure that you have;
      (a).Web browser e.g Google Chrome.
      (b).Server host http://localhost:3000/films
 
-## Using the Project
+  ## Using the Project
 (1).Clone the repository to your local machine.
 (2).Run json-server --db.json on terminal in the db.json file to watch
 (3).Open the index.html file in the web browser.
@@ -17,13 +17,13 @@ For you to run the application locally, ensure that you have;
 (5).You can click on a movie card to display more details about the Movie.
 
 
-## Technlogies used
+  ## Technlogies used
 CSS
 HTML
 JAVASCRIPT
 JSON
 
-## Main functions used in the project
+  ## Main functions used in the project
 -fetchMovies()
      Fetches data from the server URL http://localhost:3000/films and sends a GET request which is then taken back as a response on JSON.
 -displayMovies(movie)
@@ -38,8 +38,8 @@ JSON
      Modifies the element.
 -.addEventListener
       This attaches an event listener to the HTML element such that it gives a call back function when an event happens for example click, mouse movement e.t.c .
-         
-## author
+
+  ## author
 The author of this project is Christine K Juma.
 https://github.com/christine-M9
 

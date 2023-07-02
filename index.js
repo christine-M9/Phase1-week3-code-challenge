@@ -70,6 +70,7 @@ function DisplayEachMovie(emovie){
         counter.textContent = availabletickets;
     })
 }
+
 // fetching data by loop iteration
     function fetchMovies(){
     fetch(url)
