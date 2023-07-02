@@ -1,8 +1,8 @@
 # Phase1-week3-code-challenge
-  ## title
+  ## Title
 A MOVIE WEB APPLICATION.
 
-  ## description
+  ## Description
 This web application demonstrates how to fetch movie data from a server, generating movie cards, and displaying detailed movie information on the web.It contains the Javascript application for displaying movies.
 You click on a movie card to view more details about the movie.
 For you to run the application locally, ensure that you have;
@@ -39,7 +39,7 @@ JSON
 -.addEventListener
       This attaches an event listener to the HTML element such that it gives a call back function when an event happens for example click, mouse movement e.t.c .
 
-  ## author
+  ## Author
 The author of this project is Christine K Juma.
 https://github.com/christine-M9
 
