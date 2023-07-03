@@ -1,5 +1,5 @@
 // setting up an event listener
-    document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
     fetchMovies();
   });
 
@@ -25,6 +25,7 @@
     <li class ="title"><span class="bold">Tickets Sold:</span><a>${movie.tickets_sold}</a></li>
     <li class ="title"><span class="bold">Description:</span><a>${movie.description}</a></li>
     <li class ="title"><span class="bold">Poster:</span><a>${movie.poster}</a></li>
+    <li class="title"><button class="buyButton" data-id="${movie.id}">Buy Ticket</button></li>
     </ul>
  ` 
 const btn = document.querySelector(".btn");
