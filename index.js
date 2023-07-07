@@ -23,6 +23,7 @@
           availableTicketsElement.textContent = `Available Tickets: ${
      movie.capacity - movie.tickets_sold
       }`;
+       
 
       // Event listener (Ticket button)
       buyTicketButton.addEventListener("click", () => {
@@ -32,7 +33,6 @@
        movie.capacity - movie.tickets_sold
           }`;
          
-
           // Updating tickets 
           updateTicketsSold(movie.id, movie.tickets_sold);
         } 
@@ -73,7 +73,16 @@
           showMovieDetails(movie);
         });
       }
-    }
+      // Show the details of the first movie
+     const firstMovie = movieList[0];
+     if (firstMovie) {
+       showMovieDetails(firstMovie);
+     }
+   }
+
+    
+
+     
 
     // Deleting a film from the db.json file
     function deleteFilm(movieId) {
@@ -82,12 +91,10 @@
         movieList.splice(filmIndex, 1);
       }
     }
-
+  
     // Initialize the page
     showFilmList();
 
-    
   })
  
-
-   
+ 

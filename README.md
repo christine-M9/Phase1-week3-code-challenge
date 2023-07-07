@@ -1,11 +1,10 @@
 # Phase1-week3-code-challenge
-  ## Title
-A MOVIE WEB APPLICATION.
+ ## A MOVIE WEB APPLICATION.
 
   ## Description
 This web application demonstrates how to fetch movie data from a server, generating movie cards, and displaying detailed movie information on the web.It contains the Javascript application for displaying movies.
 
-You click on a movie card to view more details about the movie.
+You click on a movie name to view more details about the movie.
 
  ## Requirements
 For you to run the application locally, ensure that you have;
