@@ -31,16 +31,11 @@ fetch("db.json")
           availableTicketsElement.textContent = `Available Tickets: ${
             movie.capacity - movie.tickets_sold
           }`;
-          sMessage.textContent = "Purchased successfully!";
-          sMessage.style.color = "black";
+         
 
           // Updating tickets 
           updateTicketsSold(movie.id, movie.tickets_sold);
-        } else {
-          sMessage.textContent = "Sorry, no tickets available!";
-          sMessage.style.color = "brown";
-        }
-
+        } 
         // Checking if a movie is sold
         if (movie.tickets_sold === movie.capacity) {
           buyTicketButton.textContent = "Sold Out";
@@ -90,15 +85,8 @@ fetch("db.json")
     // Initialize the page
     showFilmList();
 
-
-    // Event listener for Delete button
-    filmListElement.addEventListener("click", (event) => {
-      if (event.target.matches(".delete-button")) {
-        const filmItem = event.target.parentElement;
-        const movieId = filmItem.getAttribute("data-film-id");
-        filmItem.remove();
-        deleteFilm(movieId);
-      }
-    });
+    
   })
-  .catch((error) => console.log(error));
+ 
+
+   
