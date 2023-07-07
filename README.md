@@ -10,9 +10,9 @@ You click on a movie card to view more details about the movie.
  ## Requirements
 For you to run the application locally, ensure that you have;
 
-     1. Web browser e.g Google Chrome.
+1. Web browser e.g Google Chrome.
      
-     2. Server host http://localhost:3000/films
+2. Server host http://localhost:3000/films
 
   ## Using the Project
 1. Clone the repository to your local machine.

@@ -1,41 +1,42 @@
-
-fetch("db.json")
-  .then((response) => response.json())
-  .then((data) => {
+   // fetching data from db.json
+   fetch("db.json")
+      .then((response) => response.json())
+       .then((data) => {
     const movieList = data.films;
     const filmListElement = document.getElementById("film-list");
 
     // showing movie details
     function showMovieDetails(movie) {
-      const posterElement = document.getElementById("poster");
-      const titleElement = document.getElementById("title");
-      const runtimeElement = document.getElementById("runtime");
-      const showtimeElement = document.getElementById("showtime");
-      const availableTicketsElement =
-        document.getElementById("available-tickets");
-      const buyTicketButton = document.getElementById("buy-ticket");
-      const sMessage = document.getElementById("message");
+            const posterElement = document.getElementById("poster");
+            const titleElement = document.getElementById("title");
+            const runtimeElement = document.getElementById("runtime");
+            const showtimeElement = document.getElementById("showtime");
+            const availableTicketsElement =
+    document.getElementById("available-tickets");
+           const buyTicketButton = document.getElementById("buy-ticket");
+           const sMessage = document.getElementById("message");
 
       posterElement.src = movie.poster;
-      titleElement.textContent = movie.title;
-      runtimeElement.textContent = `Runtime: ${movie.runtime} mins`;
-      showtimeElement.textContent = `Showtime: ${movie.showtime}`;
-      availableTicketsElement.textContent = `Available Tickets: ${
-        movie.capacity - movie.tickets_sold
+        titleElement.textContent = movie.title;
+           runtimeElement.textContent = `Runtime: ${movie.runtime} mins`;
+             showtimeElement.textContent = `Showtime: ${movie.showtime}`;
+          availableTicketsElement.textContent = `Available Tickets: ${
+     movie.capacity - movie.tickets_sold
       }`;
 
       // Event listener (Ticket button)
       buyTicketButton.addEventListener("click", () => {
         if (movie.tickets_sold < movie.capacity) {
-          movie.tickets_sold++;
+             movie.tickets_sold++;
           availableTicketsElement.textContent = `Available Tickets: ${
-            movie.capacity - movie.tickets_sold
+       movie.capacity - movie.tickets_sold
           }`;
          
 
           // Updating tickets 
           updateTicketsSold(movie.id, movie.tickets_sold);
         } 
+        
         // Checking if a movie is sold
         if (movie.tickets_sold === movie.capacity) {
           buyTicketButton.textContent = "Sold Out";
